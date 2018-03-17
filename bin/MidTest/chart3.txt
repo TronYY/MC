@@ -1,0 +1,39 @@
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: null
+        },
+        credits: {
+            enabled:false
+        },
+        xAxis: {
+            title: {
+                text: 'len(e)'
+            },
+            categories: [ '5', '10', '15', '20', '25']
+        },
+        yAxis: {
+            title: {
+                text: '耗时/ms'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: '加密时间',
+            data: [0.4,0.8,1,1.2,0.8]
+        }, {
+            name: '解密时间',
+            data: [11.2,11.8,17,11.2,11.2]
+        }]
+    });
+});

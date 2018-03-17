@@ -1,0 +1,12 @@
+10	BigInteger[ ] divideAndRemainder(BigInteger val)
+此方法返回一个包含两个BigIntegers：(this / val) 和?(this % val)，其次是一个数组。
+
+
+
+
+15 15	BigInteger gcd(BigInteger val)?
+此方法返回一个BigInteger，其值是绝对值的最大公约数：abs(this)?和abs(val)。
+
+19	boolean isProbablePrime(int certainty)
+此方法返回true，如果此BigInteger是素数，其绝对复合数则返回false。
+http://www.yiibai.com/java/math/biginteger_isprobableprime.html

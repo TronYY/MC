@@ -1,0 +1,39 @@
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: null
+        },
+        credits: {
+            enabled:false
+        },
+        xAxis: {
+            title: {
+                text: 'len(p)'
+            },
+            categories: [ '200', '400', '600', '800', '1000']
+        },
+        yAxis: {
+            title: {
+                text: 'Ê¹ÓÃÄÚ´æ/M'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: {
+                text: null,
+                visible: false
+            },
+            data: [2,4,7,10.4,14.2],
+        }]
+    });
+});

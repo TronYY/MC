@@ -1,0 +1,42 @@
+$(function () {
+    $('#container').highcharts({
+        title: {
+            text: null
+        },
+        credits: {
+            enabled:false
+        },
+        xAxis: {
+            title: {
+                text: 'len(p)'
+            },
+            categories: ['0', '200', '400', '600', '800', '1000']
+        },
+        yAxis: {
+            title: {
+                text: 'ºÄÊ±/ms'
+            },
+            plotLines: [{
+                value: 0,
+                width: 1,
+                color: '#808080'
+            }]
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+        },
+        series: [{
+            name: '1st lane',
+            data: [0.15, 0.44, 0.48, 0.43, 0.41, 0.35]
+        }, {
+            name: '2nd lane',
+            data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0]
+        }, {
+            name: '3rd lane',
+            data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0]
+        }]
+    });
+});
